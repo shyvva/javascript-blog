@@ -45,11 +45,6 @@
         console.log('clickedElement:', articleTarget);
     }
 
-    const links = document.querySelectorAll('.titles a');
-
-    for (let link of links) {
-        link.addEventListener('click', titleClickHandler);
-    }
 
     const optArticleSelector = '.post',
         optTitleSelector = '.post-title',
@@ -57,10 +52,10 @@
 
     function generateTitleLinks() {
 
-        /* remove contents of titleList */
+        /* [DONE] remove contents of titleList */
 
-        const titleList = document.querySelector(optTitleListSelector).innerHTML = '';
-
+        const titleList = document.querySelector(optTitleListSelector);
+        console.log(titleList);
         /* for each article */
         const articles = document.querySelectorAll(optArticleSelector);
 
@@ -68,29 +63,34 @@
 
         for (let article of articles) {
 
-            /* get the article id */
+            /* [DONE] get the article id */
 
             const articleId = article.getAttribute('id');
 
-            /* find the title element */
+            /* [DONE] find the title element */
 
             const articleTitle = article.querySelector(optTitleSelector).innerHTML;
 
-            /* get the title from the title element */
+            /* [DONE] get the title from the title element */
 
             const getTitle = article.getElementsByTagName('h3');
-            /* create HTML of the link */
+            /* [DONE] create HTML of the link */
 
             const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
             console.log(linkHTML);
 
-            /* insert link into titleList */
+            /* [DONE] insert link into titleList */
             html = html + linkHTML;
             console.log(html);
 
         }
-
         titleList.innerHTML = html;
     }
     generateTitleLinks();
+    
+    const links = document.querySelectorAll('.titles a');
+    console.log(links);
+        for (let link of links) {
+            link.addEventListener('click', titleClickHandler);
+        }
 }
