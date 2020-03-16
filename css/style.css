@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono|Ubuntu&display=swap");
 /* Variables */
 /* Global */
 *,
@@ -9,7 +9,7 @@
 
 body {
   background: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #444;
   font-weight: 300;
   font-size: 16px;
@@ -24,7 +24,7 @@ body {
 .section-title {
   font-size: 22px;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
 }
 
@@ -60,13 +60,13 @@ body {
   border-radius: 5px;
 }
 
-/* Logo */
+/* Splash*/
 .logo {
-  font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-size: 104px;
-  line-height: 1;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  margin: 0.4em 0;
   text-align: center;
+  font-size: 3.5em;
 }
 
 /* Lists */

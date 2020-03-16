@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono|Ubuntu&display=swap");
 
 /* Variables */
 
 $color-light: #fff;
 $color-dark: #444;
 
-$font-logo: "Sacramento", cursive;
-$font-header: "Oswald", sans-serif;
-$font-text: "Source Sans Pro", sans-serif;
+$font-logo: "Roboto Mono", monospace;
+$font-header: "Ubuntu", sans-serif;
+$font-text: "Nunito", sans-serif;
 
 /* Global */
 
@@ -67,15 +67,16 @@ body {
   border-radius: 5px;
 }
 
-/* Logo */
-
+/* Splash*/
 .logo {
   font-family: $font-logo;
-  font-weight: 400;
-  font-size: 104px;
-  line-height: 1;
+  font-weight: 200;
+  margin: 0.4em 0;
   text-align: center;
+  font-size: 3.5em;
 }
+
+
 
 /* Lists */
 
