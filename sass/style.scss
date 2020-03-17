@@ -17,8 +17,6 @@ $font-text: "Nunito", sans-serif;
   box-sizing: border-box;
 }
 
-
-
 body {
   background: $color-light;
   font-family: $font-text;
@@ -44,8 +42,6 @@ body {
     color: lighten($color-dark, 20%);
   }
 }
-
-
 
 /* Layout */
 
@@ -81,15 +77,12 @@ body {
   font-size: 3.5em;
 }
 
-
-
 /* Lists */
 a:-webkit-any-link {
   color: black;
   cursor: pointer;
   text-decoration: none;
-  }
-
+}
 
 .list {
   list-style-type: none;
@@ -103,7 +96,6 @@ a:-webkit-any-link {
 .list-horizontal {
   li {
     display: inline-block;
-
   }
 }
 
@@ -141,4 +133,3 @@ a:-webkit-any-link {
     margin: 0 10px 0 0;
   }
 }
-

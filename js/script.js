@@ -56,7 +56,7 @@
             }
         }
 
-    }
+    };
 
 
 
@@ -98,7 +98,7 @@
 
         articleTarget.classList.add('active');
         console.log('clickedElement:', articleTarget);
-    }
+    };
 
 
     const optArticleSelector = '.post',

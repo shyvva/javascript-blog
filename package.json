@@ -11,7 +11,7 @@
 
     "test": "npm-run-all test:*",
     "test:html": "html-validate *.htlm",
-    "test:js": "./node_modules/.bin/eslint js/*.js",
+    "test:js": "eslint js/*.js",
 
     "build": "npm-run-all build:* test",
     "build:sass": "node-sass --output-style compact -o css sass",
