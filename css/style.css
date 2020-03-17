@@ -70,12 +70,6 @@ body {
 }
 
 /* Lists */
-a:-webkit-any-link {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .list {
   list-style-type: none;
   margin: 0;
