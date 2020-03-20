@@ -241,11 +241,11 @@
     /*[DONE] find all tag links with "href" attribute equal to the "href" constant */
 
     const tagLinks = document.querySelectorAll('a[href="' + href + '"');
-
     /*[DONE] START LOOP: for each found tag link */
-    for (let tagLink of tagLinks) {
+    for (let tagAddLink of tagLinks) {
       /* add class active */
-      tagLink.classList.add('active');
+      tagAddLink.classList.add('active');
+      console.log('Click', tagAddLink);
       /* END LOOP: for each found tag link */
     }
     /*[DONE] execute function "generateTitleLinks" with article selector as argument */
@@ -255,9 +255,9 @@
 
   function addClickListenersToTags() {
     /*[DONE] find all links to tags */
-    const links = document.querySelectorAll('.post-tags a');
+    const tagClickLinks = document.querySelectorAll('a[href^="#tag-"]');
     /*[DONE] START LOOP: for each link */
-    for (let link of links) {
+    for (let link of tagClickLinks) {
       /* add tagClickHandler as event listener for that link */
       link.addEventListener('click', tagClickHandler);
       /* END LOOP: for each link */
@@ -265,4 +265,5 @@
   }
 
   addClickListenersToTags();
+
 }
