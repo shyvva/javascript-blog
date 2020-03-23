@@ -42,7 +42,7 @@
     },
   };
 
-  let TxtRotate = function (el, toRotate, period) {
+  let txtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -52,7 +52,7 @@
     this.isDeleting = false;
   };
 
-  TxtRotate.prototype.tick = function () {
+  txtRotate.prototype.tick = function () {
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
 
@@ -89,7 +89,7 @@
       let toRotate = elements[i].getAttribute('data-rotate');
       let period = elements[i].getAttribute('data-period');
       if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        new txtRotate(elements[i], JSON.parse(toRotate), period);
       }
     }
 
@@ -198,7 +198,7 @@
 
   calculateTagsParams();
 
-  function claculateTagClass(count) {
+  function claculateTagClass(count = 5) {
     const params = {
       min: 2,
       max: 10,
@@ -301,9 +301,7 @@
 
       /* [NEW] generate code of a link and add it to allTagsHTML */
 
-      allTagsHTML += '<li><a href="#tag-' + tag + ' " ><span>' + tag + '</span></a>' + '  (' + allTags[tag] + ')</li> ';
-
-
+      allTagsHTML += '<li><a class="' + claculateTagClass(allTags[tag], tagsParams) + '" href="#tag-' + tag + ' " ><span>' + tag + '</span></a>' + '</li>';
     }
     /* [NEW] END LOOP: for each tag in allTags: */
 
@@ -544,3 +542,4 @@
 
   addClickListenersToAuthor();
 }
+
