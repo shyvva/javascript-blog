@@ -198,7 +198,7 @@
 
   calculateTagsParams();
 
-  function claculateTagClass(count = 5) {
+  function calculateTagClass(count = 5) {
     const params = {
       min: 2,
       max: 10,
@@ -215,7 +215,7 @@
 
     return opts.tagSizes.classPrefix + classNumber;
   }
-  claculateTagClass();
+  calculateTagClass();
 
 
 
@@ -302,7 +302,7 @@
 
       /* [NEW] generate code of a link and add it to allTagsHTML */
 
-      allTagsHTML += '<li><a class="' + claculateTagClass(allTags[tag], tagsParams) + '" href="#tag-' + tag + ' " ><span>' + tag + '</span></a>' + '</li>';
+      allTagsHTML += '<li><a class="' + calculateTagClass(allTags[tag], tagsParams) + '"href="#tag-' + tag + '" ><span>' + tag + '</span></a>' + '</li>';
     }
     /* [NEW] END LOOP: for each tag in allTags: */
 
