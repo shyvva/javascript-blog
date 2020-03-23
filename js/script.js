@@ -295,6 +295,7 @@
 
     let allTagsHTML = '';
 
+
     /* [NEW] START LOOP: for each tag in allTags: */
 
     for (let tag in allTags) {
@@ -308,6 +309,7 @@
     /*[NEW] add HTML from allTagsHTML to tagList */
     tagList.innerHTML = allTagsHTML;
     console.log(allTags);
+
   }
 
 

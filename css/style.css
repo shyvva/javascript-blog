@@ -72,6 +72,7 @@ body {
 /* Lists */
 .list {
   list-style-type: none;
+  display: inline;
   margin: 0;
   padding: 0;
 }
@@ -87,6 +88,32 @@ body {
 /* Authors */
 .authors li {
   margin-bottom: 12px;
+}
+
+/*Tags Cloud */
+.tags li {
+  display: inline-block;
+  padding: 8px;
+  list-style: none;
+}
+
+[class^="tag-size"] {
+  text-align: center;
+  text-decoration: none;
+}
+
+.tag-size-1 {
+  font-size: 12px;
+}
+
+.tag-size-2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag-size-3 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* Post */
